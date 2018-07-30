@@ -1,0 +1,519 @@
+<!-- <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MAVENTILES</groupId>
+  <artifactId>maventiles</artifactId>
+
+  <version>0.0.1-SNAPSHOT</version>
+  <name>maventiles Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+ <packaging>war</packaging>
+  <properties>
+  
+     <org.springframework.version>4.0.6.RELEASE</org.springframework.version> 
+        <hibernate.version>4.3.6.FINAL</hibernate.version>
+       
+        <mysql-connector.version>5.0.5</mysql-connector.version>
+        <commons-dbcp.version>1.4</commons-dbcp.version>
+      
+        <logback.version>1.1.3</logback.version>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+ 
+  
+  
+ 
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>3.8.1</version>
+  		
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-jdbc</artifactId>
+  		<version>4.3.7.RELEASE</version>
+  	</dependency>
+
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-expression</artifactId>
+  		<version>4.0.6.RELEASE</version>
+  	</dependency>
+  	  <dependency>
+        	<groupId>cglib</groupId>
+        	<artifactId>cglib</artifactId>
+        	<version>2.1.3</version>
+        </dependency>
+  	  <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-core</artifactId>
+        	<version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-beans</artifactId>
+        	<version>${org.springframework.version}</version>
+        </dependency>
+     
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-aop</artifactId>
+        	<version>${org.springframework.version}</version>
+        </dependency>
+  
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-context</artifactId>
+        	<version>4.0.3.RELEASE</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-web</artifactId>
+        	<version>4.1.6.RELEASE</version>
+        </dependency>
+
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-webmvc</artifactId>
+        	<version>4.1.6.RELEASE</version>
+        </dependency>
+    
+        
+        <dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>jstl</artifactId>
+  		<version>1.2</version>
+  	</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>3.0.1.RELEASE</version>
+</dependency>
+  	   <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-api</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-core</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-jsp</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+        <dependency>
+        	<groupId>commons-logging</groupId>
+        	<artifactId>commons-logging-api</artifactId>
+        	<version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-servlet</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+        
+        <dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-api</artifactId>
+        	<version>1.7.6</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.slf4j</groupId>
+        	<artifactId>slf4j-log4j12</artifactId>
+        	<version>1.6.2</version>
+        </dependency>
+        <dependency>
+  		<groupId>org.hibernate</groupId>
+  		<artifactId>hibernate-validator</artifactId>
+  		<version>4.0.2.GA</version>
+  	</dependency>
+  	  
+<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.0.1.Final</version>
+		</dependency> 
+  <dependency>
+            <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <version>4.0.1.Final</version>
+            <classifier>tests</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>      
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.0.1.Final</version>
+        </dependency>
+        <dependency>
+        	<groupId>commons-dbcp</groupId>
+        	<artifactId>commons-dbcp</artifactId>
+        	<version>20030825.184428</version>
+        </dependency>
+          <dependency>
+        	<groupId>commons-pool</groupId>
+        	<artifactId>commons-pool</artifactId>
+        	<version>20030825.183949</version>
+        </dependency>
+        <dependency>
+        	<groupId>mysql</groupId>
+        	<artifactId>mysql-connector-java</artifactId>
+        	<version>5.1.6</version>
+        </dependency>
+        
+          <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-orm</artifactId>
+        	<version>3.0.1.RELEASE</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-expression</artifactId>
+        	<version>3.0.1.RELEASE</version>
+        </dependency>
+      
+        <dependency>
+        	<groupId>javax.servlet</groupId>
+        	<artifactId>javax.servlet-api</artifactId>
+        	<version>3.0.1</version>
+        </dependency>
+        <dependency>
+        	<groupId>commons-lang</groupId>
+        	<artifactId>commons-lang</artifactId>
+        	<version>2.5</version>
+        </dependency>
+
+        <dependency>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-compiler-plugin</artifactId>
+        	<version>2.0.2</version>
+        	<type>maven-plugin</type>
+</dependency>
+        <dependency>
+        	<groupId>org.apache.tiles</groupId>
+        	<artifactId>tiles-request-api</artifactId>
+        	<version>1.0.6</version>
+        </dependency>
+
+        <dependency>
+        	<groupId>org.apache.maven.plugin-tools</groupId>
+        	<artifactId>maven-plugin-annotations</artifactId>
+        	<version>3.4</version>
+        </dependency>
+  </dependencies>
+	
+	<build><plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+             <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                    <configuration>
+                        <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                        <warName>Spring4MVCApacheTiles3Example</warName>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+     
+        </plugins></build>
+</project> -->
+
+
+
+
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>org</groupId> 
+  <artifactId>Example</artifactId> 
+  
+  <packaging>war</packaging> 
+  <version>0.1</version> 
+  <name>SpringMvcUser Maven Webapp</name> 
+  <url>http://maven.apache.org</url> 
+<properties>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+  <spring.version>3.0.1.RELEASE</spring.version> 
+  <junit.version>4.12</junit.version> 
+  <servlet.version>3.1.0</servlet.version> 
+  <servlet.version>3.0.1</servlet.version> 
+
+  </properties>
+ <repositories>
+ <!--  Repository for ORACLE JDBC Driver 
+  --> 
+ <repository>
+  <id>codelds</id> 
+  <url>https://code.lds.org/nexus/content/groups/main-repo</url> 
+  </repository>
+  </repositories>
+ <dependencies>
+ <!--  Junit 
+  --> 
+ <dependency>
+  <groupId>junit</groupId> 
+  <artifactId>junit</artifactId> 
+  <version>${junit.version}</version> 
+  <scope>test</scope> 
+  </dependency>
+ <!-- Servlet-Api 
+  --> 
+ <dependency>
+  <groupId>javax.servlet</groupId> 
+  <artifactId>javax.servlet-api</artifactId> 
+  <version>${servlet.version}</version> 
+  </dependency>
+ <!--  Spring Framework 
+  --> 
+ <dependency>
+  <groupId>org.springframework</groupId> 
+  <artifactId>spring-core</artifactId> 
+  <version>${spring.version}</version> 
+  </dependency>
+  <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-aop</artifactId>
+        	<version>${spring.version}</version>
+        </dependency>
+ <dependency>
+  <groupId>org.springframework</groupId> 
+  <artifactId>spring-beans</artifactId> 
+  <version>${spring.version}</version> 
+  </dependency>
+ <dependency>
+  <groupId>org.springframework</groupId> 
+  <artifactId>spring-context</artifactId> 
+  <version>${spring.version}</version> 
+  </dependency>
+    <dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>jstl</artifactId>
+  		<version>1.2</version>
+  	</dependency>
+  	
+ <!-- 
+  <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency> 
+
+  --> 
+ <dependency>
+  <groupId>org.springframework</groupId> 
+  <artifactId>spring-test</artifactId> 
+  <version>${spring.version}</version> 
+  <scope>test</scope> 
+  </dependency>
+ <dependency>
+  <groupId>org.springframework</groupId> 
+  <artifactId>spring-webmvc</artifactId> 
+  <version>${spring.version}</version> 
+  </dependency>
+  <dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+	
+     <dependency>
+        	<groupId>org.springframework</groupId>
+        	<artifactId>spring-web</artifactId>
+        	<version>${spring.version}</version>
+        </dependency>
+     <dependency>  
+     <groupId>org.codehaus.jackson</groupId>  
+     <artifactId>jackson-mapper-asl</artifactId>  
+     <version>1.9.10</version>  
+    </dependency>  
+ <!--  Servlet API 
+  --> 
+ <!-- 
+   <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+        </dependency> 
+
+  --> 
+ <!--  https://mvnrepository.com/artifact/javax.persistence/persistence-api 
+  --> 
+ <dependency>
+  <groupId>antlr</groupId> 
+  <artifactId>antlr</artifactId> 
+  <version>2.7.7</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/dom4j/dom4j 
+  --> 
+ <dependency>
+  <groupId>dom4j</groupId> 
+  <artifactId>dom4j</artifactId> 
+  <version>1.6.1</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/org.hibernate/hibernate-core 
+  --> 
+<dependency>
+  <groupId>org.hibernate</groupId> 
+  <artifactId>hibernate-core</artifactId> 
+  <version>3.6.10.Final</version> 
+  </dependency>
+<!--  https://mvnrepository.com/artifact/org.hibernate/hibernate-validator 
+  --> 
+<dependency>
+  <groupId>org.hibernate</groupId> 
+  <artifactId>hibernate-validator</artifactId> 
+  <version>3.1.0.GA</version> 
+  </dependency>
+<!--  https://mvnrepository.com/artifact/org.eclipse.persistence/javax.persistence 
+  --> 
+ <dependency>
+  <groupId>org.eclipse.persistence</groupId> 
+  <artifactId>javax.persistence</artifactId> 
+  <version>2.0.0</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations 
+  --> 
+ <dependency>
+  <groupId>org.hibernate</groupId> 
+  <artifactId>hibernate-annotations</artifactId> 
+  <version>3.2.1.ga</version> 
+  </dependency>
+<!--  https://mvnrepository.com/artifact/org.hibernate/hibernate-commons-annotations 
+  --> 
+ <dependency>
+  <groupId>org.hibernate</groupId> 
+  <artifactId>hibernate-commons-annotations</artifactId> 
+  <version>3.0.0.ga</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager 
+  --> 
+ <dependency>
+  <groupId>org.hibernate</groupId> 
+  <artifactId>hibernate-entitymanager</artifactId> 
+  <version>3.6.10.Final</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api 
+  --> 
+ <dependency>
+  <groupId>org.hibernate.javax.persistence</groupId> 
+  <artifactId>hibernate-jpa-2.0-api</artifactId> 
+  <version>1.0.1.Final</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/javax.persistence/persistence-api 
+  --> 
+ <dependency>
+  <groupId>javax.persistence</groupId> 
+  <artifactId>persistence-api</artifactId> 
+  <version>1.0</version> 
+  </dependency>
+ <dependency>
+  <groupId>com.oracle</groupId> 
+  <artifactId>ojdbc14</artifactId> 
+  <version>10.2.0.1.0</version> 
+  <scope>system</scope> 
+  <systemPath>C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar</systemPath> 
+ <!--  must match file name 
+  --> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/asm/asm 
+  --> 
+ <dependency>
+  <groupId>asm</groupId> 
+  <artifactId>asm</artifactId> 
+  <version>3.1</version> 
+  </dependency>
+ <!--  https://mvnrepository.com/artifact/org.springframework/spring-orm 
+  --> 
+ <dependency>
+  <groupId>org.springframework</groupId> 
+  <artifactId>spring-orm</artifactId> 
+  <version>${spring.version}</version> 
+  </dependency>
+<dependency>
+   <groupId>org.glassfish</groupId>
+   <artifactId>javax.json</artifactId>
+   <version>1.0.4</version>
+</dependency>
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20140107</version>
+</dependency>
+ <dependency>
+        <groupId>net.sf.json-lib</groupId>
+        <artifactId>json-lib</artifactId>
+        <version>2.4</version>
+        <classifier>jdk15</classifier>
+    </dependency>
+<!--   <dependency>
+  	<groupId>org.json</groupId>
+  	<artifactId>json</artifactId>
+  	<version>20090211</version>
+  </dependency> -->
+  <dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1</version>
+</dependency>
+	<dependency>
+		<groupId>org.codehaus.jackson</groupId>
+		<artifactId>jackson-mapper-asl</artifactId>
+		<version>1.9.10</version>
+	</dependency>
+  
+<!--   <dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+<dependency>
+    <groupId>com.tdunning</groupId>
+    <artifactId>json</artifactId>
+    <version>1.3</version>
+</dependency> -->
+
+ </dependencies>
+<!--  <build>
+  <finalName>SpringMvcUser</finalName> 
+  </build> -->
+  <build><plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+             <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.4</version>
+                    <configuration>
+                        <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                        <warName>Spring4MVCApacheTiles3Example</warName>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+     
+        </plugins></build>
+  </project>

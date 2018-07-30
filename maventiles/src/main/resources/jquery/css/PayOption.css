@@ -1,0 +1,1628 @@
+/**
+ * @author GeekTantra
+ * @date 20 September 2009
+ */
+input, select, textarea
+{
+    border: 1px solid #888;
+    background: #ffffff;
+    padding: 3px 4px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+input:focus, select:focus
+{
+    outline: none;
+}
+
+.InputGroup
+{
+    display: inline-block;
+    padding: 3px 4px;
+    border: 1px solid #FFF;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+
+.ErrorField
+{
+    border-color: #D00;
+    color: #D00;
+    background: #FFFFFE;
+}
+
+span.ValidationErrors
+{
+    display: inline-block;
+    font-size: 12px;
+    color: #D00;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+body
+{
+    font-size: .80em;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0px;
+    color: #696969;
+    padding: 29px;
+    background: #2781BA;
+    background-image:url(/PayOptionTemplates/IRCTC/Images/tricolor-bg.jpg)!important;
+    background-repeat:no-repeat !important;
+    background-attachment:fixed !important;
+    background-size:cover !important;
+}
+
+.mainContainer
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    width: 954px;
+    display: table;
+}
+
+.siteHeader
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    min-height: 40px;
+    display: table;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#DDD), to(#FFF));
+    background: -moz-linear-gradient(top, #DDD, #FFF);
+    background: #FFF;
+}
+
+.siteLogo
+{
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.ycsLogo
+{
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+
+.siteFooter
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 890px;
+    padding: 5px;
+    background-color: #AAA;
+    min-height: 20px;
+    display: table;
+    text-align: center;
+    color: #EEE;
+    z-index: 0;
+}
+
+.siteFooterContainerLeft
+{
+    color: #0190D3;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 11px;
+    text-decoration: none;
+    float: left;
+}
+
+.siteFooterContainerReight
+{
+    color: #767676;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 11px;
+    text-decoration: none;
+    float: right;
+}
+.siteFooterContainerLeft a
+{
+    color: #0094D6;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.siteContainer
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 890px;
+    min-width: 890px;
+    padding: 0;
+    background-color: #FFF;
+    min-height: 600px;
+    display: table;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 600px;
+    z-index: 100;
+}
+
+
+.siteContainerHeading
+{
+    color: #0190D3;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 40px;
+}
+
+.siteContainerleft
+{
+    color: #0190D3;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: none;
+    float: left;
+    width: 590px;
+}
+
+.siteContainerRight
+{
+    color: #010165;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 11px;
+    text-decoration: none;
+    float: right;
+    width: 260px;
+    background: #EBEBEB;
+    border: 3px solid #EBEBEB;
+    padding: 5px 5px 12px;
+}
+
+.curve
+{
+    border: 1px solid #ffffff;
+    background-color: #FFF;
+    box-shadow: 0 0 3px #AAAAAA;
+}
+
+
+.seperator
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding-top: 20px;
+    width: 250px;
+}
+
+.seperatornew
+{
+    border-bottom: 1px solid #CCCCCC;
+    padding-top: 5px;
+    width: 260px;
+    margin: 0 auto;
+}
+
+.heading
+{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.headingleft
+{
+    padding: 3px 0 8px 10px;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+}
+
+
+.mGrid
+{
+    width: 100%;
+    background-color: #fff;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.mGrid th
+{
+    padding: 8px;
+    color: #767676;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+.mGrid td
+{
+    padding: 8px;
+    border-left: solid 1px #ccc;
+    color: #767676;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+.mGridEMIbank
+{
+    width: 80%;
+    background-color: #fff;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto 35px;
+}
+
+.mGridEMIbank th
+{
+    padding: 8px;
+    color: #767676;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+.mGridEMIbank td
+{
+    padding: 8px 0;
+    color: #767676;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+
+#tblBankEMI
+{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+#tblBankEMI th
+{
+    padding: 2px;
+    color: #767676;
+    background: #FFF;
+    border-left: none;
+    border-bottom: none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10.4px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+#tblBankEMI td
+{
+    padding: 3px;
+    border-left: solid 5px #fff;
+    background: #DDD;
+    color: #767676;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10.4px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+#rButtonMonth
+{
+    background: #FFF !important;
+}
+
+.tabContainer
+{
+    color: #010165;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 25px 0 0;
+    text-decoration: none;
+    float: left;
+    width: 560px;
+    padding: 15px;
+    background: #EBEBEB;
+    overflow: hidden;
+}
+
+.tabContainerEMI
+{
+    color: #010165;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 25px 0 0;
+    text-decoration: none;
+    float: left;
+    width: 560px;
+    padding: 35px 15px;
+    background: #EBEBEB;
+    overflow: hidden;
+}
+
+
+.tabs
+{
+    width: 223px;
+    float: left;
+}
+
+.tab
+{
+    list-style: none;
+    width: 212px;
+    cursor: pointer;
+    left: 0px;
+    z-index: 2;
+    display: table;
+    border-bottom: #CACACA solid 1px;
+    color: #000;
+    position: relative;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 9px 0 9px 10px;
+}
+
+.selected
+{
+    color: #ffffff;
+    background: url("Images/BGRed.gif") #ED1C24;
+}
+
+.tabContent
+{
+    width: 325px;
+    float: right;
+    min-height: 370px;
+    display: none;
+    background-color: #FFF;
+    margin: 5px 0;
+}
+
+.tabContents
+{
+    width: 333px;
+    float: left;
+    min-height: 390px;
+}
+
+.tabContentscrd
+{
+    width: 331px;
+    float: right;
+    min-height: 20px;
+    margin-right: 3px;
+}
+
+.paymentOptionFieldset
+{
+    border: 0 solid red;
+    margin: 2px;
+    padding: 0px;
+    width: 300px;
+}
+
+.paymentFieldset
+{
+    border: 0 solid red;
+    margin: 2px;
+    padding: 0px;
+    width: 300px;
+}
+
+.contentOrderDetails
+{
+    padding: 5px;
+    font-size: 13px;
+    background: #FFF;
+    display: table;
+}
+
+.contentPaymentDetails
+{
+    padding: 10px;
+    font-size: 13px;
+    min-height: 100px;
+    background: #FFF;
+    width: 600px;
+    margin: 100px auto 0;
+    border: 1px solid Red;
+    position: relative;
+}
+.contentOrderDetails fieldset
+{
+    border: 0 solid red;
+    margin: 10px 0;
+    padding: 0px;
+    width: 250px;
+}
+
+.contentOrderDetails fieldset label
+{
+    font: normal 13px Arial;
+    color: #000;
+    float: left;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 0;
+    text-align: left;
+    width: 150px;
+}
+
+em
+{
+    color: #CC1100;
+}
+.contentOrderDetails fieldset span
+{
+    font: normal 13px Arial;
+    color: #000;
+    float: right;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 0;
+    text-align: right;
+}
+
+
+
+.payOptionContent
+{
+    padding: 0 10px;
+    font-size: 13px;
+    color: #000;
+}
+
+.error
+{
+    color: #ff0000 !important;
+    float: left;
+    font: italic 12px/25px normal Arial,Helvetica,sans-serif !important;
+    border: 1px solid red !important;
+    height: 25px;
+    margin: 0 10px;
+    padding: 0 0 0 0;
+    text-align: left;
+    width: 120px;
+}
+
+.error2
+{
+    color: #ff0000;
+    float: left;
+    font: 15px/25px normal Arial,Helvetica,sans-serif;
+    margin: 0 10px;
+    padding: 0 0 0 0;
+    text-align: left;
+    width: 290px;
+    overflow: auto;
+}
+
+.msg
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    color: #8B0000;
+    float: left;
+    overflow: auto;
+    margin: 5px;
+    padding: 0 0 0 0;
+    width: 270px;
+}
+.payOptionContent fieldset
+{
+    border: 0 solid red;
+    margin: 5px 0;
+    padding: 0;
+    width: 300px;
+}
+
+.payOptionContent label
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    float: left;
+}
+
+
+
+.payOptionContent fieldset label
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    float: left;
+    margin: 0;
+    padding: 0 0 0 25px;
+    text-align: left;
+    width: 150px;
+}
+
+
+
+.payOptionContent fieldset span
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    margin: 5px 0 0 5px;
+    padding: 0 0 0 0;
+    text-align: left;
+    overflow: auto;
+}
+
+.payOptionContent fieldset input
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    border: 1px solid #CCC;
+    float: left;
+    height: 28px;
+    line-height: 28px; /* FOR IE */
+    margin: 0 0 15px 5px;
+    padding: 0 2px;
+    text-align: left;
+    width: 250px;
+    color: #aaa;
+    font-style: italic;
+    background: url("Images/Inpubg.jpg") repeat-x;
+}
+.payOptionContent fieldset textarea
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    border: 1px solid #CCC;
+    float: left;
+    margin: 0 0 15px 5px;
+    padding: 0 2px;
+    text-align: left;
+    color: #aaa;
+    font-style: italic;
+    background: url("Images/Inpubg.jpg") repeat-x;
+    max-width: 252px;
+    max-height: 60px;
+    min-width: 252px;
+    min-height: 60px;
+}
+
+.payOptionContent fieldset select
+{
+    border: 1px solid #CCC;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 28px;
+    margin: 0 0 15px 5px;
+    padding: 4px 2px;
+    text-align: left;
+    width: 250px;
+    color: #aaa;
+    font-style: italic;
+    background: url("Images/Inpubg.jpg") repeat-x;
+}
+
+.imgContainer
+{
+    border: 0 solid red;
+    margin: 5px 5px 5px 160px;
+    padding: 0;
+    width: 250px;
+    float: left;
+}
+.imgContainerCaptcha
+{
+    border: 0 solid red;
+    margin: 5px 5px 5px 32px;
+    padding: 0;
+    width: 250px;
+    float: left;
+}
+
+
+.payOptionContentimg
+{
+    border: 1px solid #979797;
+    min-height: 60px;
+    min-width: 200px;
+    margin: auto;
+    float: left;
+    text-align: center;
+}
+
+
+.payOptionRefreshImg
+{
+    cursor: pointer;
+}
+
+.btnpay
+{
+    background-color: #E34E4E;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    height: 38px;
+    width: 150px;
+    margin: 0 60px 0 0;
+    float: right;
+}
+.btnpaycancel
+{
+    background-color: #DDD;
+    border: medium none;
+    border-radius: 3px;
+    color: #444;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 15px 0 0;
+    float: left;
+    padding: 11px 20px;
+}
+.btnpay2
+{
+    background-color: #E34E4E;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    height: 38px;
+    width: 150px;
+    margin: 0 0 10px 0;
+    float: right;
+}
+
+.note
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    text-align: left;
+    color: #AAAAAA;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: justify;
+    width: 250px;
+}
+
+
+
+
+.payOptionContentError
+{
+    margin-bottom: 11px;
+    padding: 20px;
+    text-align: center;
+}
+
+.payOptionContentError label
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    color: #B22222;
+    margin: auto;
+    padding: 0 0 0 0;
+    text-align: center;
+}
+div#footer
+{
+    bottom: 0;
+    left: 0;
+    height: <length>;
+}
+div#header
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: header-<length>;
+    z-index: 1400;
+    margin: 0 auto;
+    background: #ED1B24;
+    padding: 5px 0 1px;
+}
+.options
+{
+    border: 0 solid red;
+    float: right;
+    font-size: 12px;
+    margin: 21px -9px 0 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.BGIMG
+{
+    background: url("Images/Call.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    font-family: Trebuchet MS,Arial;
+    font-size: 14px;
+    font-weight: bold;
+    height: 29px;
+    padding: 6px 0 0 20px;
+    width: 175px;
+}
+.BGIMG2
+{
+    background: url("Images/Support.jpg") no-repeat scroll 0 0 transparent;
+    float: left;
+    font: normal 14px/10px Arial;
+    height: 18px;
+    padding: 0 0 0 17px;
+    width: 160px;
+    color: #FFF;
+}
+.SbHedng
+{
+    font-size: 15px;
+}
+.BarMainDiv
+{
+    width: 988px;
+    background-color: #FFF;
+    border: 1px solid #767676;
+    height: 29px;
+    margin: 20px auto 0;
+}
+.SlctdPrt
+{
+    width: 348px;
+    background-color: #454545;
+    color: #FFF;
+    float: left;
+}
+.WhtPrt
+{
+    width: 320px;
+    background-color: #FFF;
+    color: #454545;
+    float: left;
+}
+.Cancel
+{
+    float: left;
+    color: #767676;
+    font-size: 11px;
+}
+.Cancel a:hover
+{
+    float: right;
+    color: #000;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Cancel a
+{
+    float: right;
+    text-decoration: underline;
+    color: #767676;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+
+
+.web_dialog_overlay
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    opacity: .15;
+    filter: alpha(opacity=15);
+    -moz-opacity: .15;
+    z-index: 101;
+    display: none;
+}
+.web_dialog
+{
+    display: none;
+    position: fixed;
+    width: 380px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -100px;
+    background-color: #ffffff;
+    border: 2px solid #336699;
+    padding: 0px;
+    z-index: 102;
+    font-family: Verdana;
+    font-size: 10pt;
+}
+.web_dialog_title
+{
+    border-bottom: solid 2px #336699;
+    background-color: #336699;
+    padding: 4px;
+    color: White;
+    font-weight: bold;
+}
+.web_dialog_title a
+{
+    color: White;
+    text-decoration: none;
+}
+.align_right
+{
+    text-align: right;
+}
+
+.popUpBack
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background: url(Images/loadingbgblackn.png) repeat;
+    display: none;
+    z-index: 10000;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+}
+
+.popUpBackBlack
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    background: url(Images/Loadingbgblackn.png) repeat;
+    display: none;
+    z-index: 10000;
+    vertical-align: middle;
+    text-align: left;
+    display: none;
+}
+
+.popUpMsg
+{
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    width: 400px;
+    background-color: #FFFFFF;
+    border: 1px solid #aaaaaa;
+    border-radius: 13px 13px 13px 13px;
+    box-shadow: 0 0 3px #000000;
+    display: table;
+    padding: 20px;
+}
+
+.popUpHeading
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table;
+    color: #000000;
+}
+
+.popUpcontent
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: table;
+    color: #000055;
+}
+
+
+.popUpcontent a:hover
+{
+    float: right;
+    color: #000;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.popUpcontent a
+{
+    float: right;
+    text-decoration: underline;
+    color: #444;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.imgCardCCVHelp
+{
+    cursor: pointer;
+    margin: 7px 0 0 3px;
+}
+
+
+.CardCCVHelp
+{
+    top: 418px;
+    left: 834.5px;
+    display: none;
+    z-index: 1000;
+    vertical-align: middle;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    border: 2px solid #aaa;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.CardCCVHelpContant
+{
+    text-align: center;
+    min-height: 150px;
+    width: 250px;
+    display: block;
+    font-size: 11px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #444;
+}
+
+.paidAmountTransStatus
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.paidAmountTransStatus:hover
+{
+    color: #000;
+    cursor: pointer;
+}
+
+
+.btnpayDisble
+{
+    background-color: #DDD;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    color: #AAA;
+    font-size: 18px;
+    height: 38px;
+    width: 150px;
+    margin: 0 60px 0 0;
+    float: right;
+}
+
+.btnpay2Disble
+{
+    background-color: #DDD;
+    border: medium none;
+    border-radius: 8px 8px 8px 8px;
+    color: #AAA;
+    cursor: pointer;
+    font-size: 18px;
+    height: 38px;
+    width: 150px;
+    margin: 0 0 10px 0;
+    float: right;
+}
+
+.ErrorContPymnt
+{
+    display: block;
+    margin: 15px auto 0px;
+    background-color: rgb(255, 255, 255);
+    vertical-align: middle;
+    font-weight: bold;
+    width: 890px;
+    padding: 6px 10px 10px;
+}
+.ErrorContPymnt img
+{
+    padding-right: 10px;
+}
+
+.orderandpayment
+{
+    width: 954px;
+    margin: 35px auto 15px;
+    border-bottom: 1px solid #DDD;
+    text-align: center;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.orderstripbgimg
+{
+    float: left;
+    background: url(Images/OrderRight.jpg) no-repeat;
+    float: left;
+    width: 185px;
+    text-align: left;
+    height: 29px;
+    padding: 1px 0px 0px 39px;
+    font: normal 22px Arial;
+    color: #777474;
+}
+.orderarrowimg
+{
+    float: left;
+    background: url(Images/Arrow.jpg) no-repeat;
+    float: left;
+    width: 10px;
+    text-align: left;
+    height: 20px;
+    padding: 1px 0px 0px 20px;
+    font: normal 22px Arial;
+    color: #777474;
+    margin-top: 5px;
+}
+.orderpaymntbgimg
+{
+    float: left;
+    background: url(Images/Payment3.jpg) no-repeat;
+    float: left;
+    width: 100px;
+    text-align: left;
+    height: 29px;
+    padding: 1px 0px 0px 39px;
+    font: bold 22px Arial;
+    color: #000;
+}
+
+.Paymentheadingdiv
+{
+    width: 890px;
+    font: bold 22px/30px Arial;
+    color: #000;
+    margin: 0 auto;
+}
+
+.paymentmodeheadmain
+{
+    border-bottom: 1px solid #c6c6c6;
+}
+.paymentmodetitle
+{
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    background: #ebebeb;
+    font: bold 16px Arial;
+    color: #000;
+    padding: 6px;
+}
+.paymentmodetitlered
+{
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    background: #ed1c24;
+    font: bold 16px Arial;
+    color: #FFF;
+    padding: 6px;
+}
+
+.orderdetaildivmain
+{
+    float: right;
+    width: 260px;
+    color: #000;
+    display: table;
+}
+.orderdetaildivinsd
+{
+    border: 3px solid #ebebeb;
+    background: #ebebeb;
+    width: 260px;
+    padding: 5px 5px;
+    color: #000;
+    font-size: 20px;
+}
+.orderdetailwhitebg
+{
+    background: #FFF;
+    padding: 15px;
+    display: table;
+    width: 230px;
+}
+.orderdetailindvl
+{
+    display: table;
+    font: normal 14px/28px Arial;
+}
+.orderdetailtotal
+{
+    display: table;
+    font: bold 14px/36px Arial;
+}
+.orderdetailindvlleft
+{
+    float: left;
+    width: 100px;
+}
+
+.EMICreditcardtab
+{
+    float: left;
+    border-width: 1px 1px medium;
+    border: 1px solid #DDD;
+    border-bottom: none;
+    padding: 6px 10px;
+    width: 125px;
+    background: #ED1C24;
+    z-index: 1;
+    margin: -26px 41px 0 0;
+    color: #FFF;
+    text-align: center;
+}
+
+.EMICreditcardtabdflt
+{
+    float: left;
+    border-width: 1px 1px medium;
+    border: 1px solid #DDD;
+    border-bottom: none;
+    padding: 6px 10px;
+    width: 125px;
+    background: #FFF;
+    z-index: 1;
+    margin: -26px 41px 0 0;
+    color: #000;
+    text-align: center;
+}
+
+.EMIbillingtab
+{
+    float: right;
+    border-width: 1px 1px medium;
+    border: 1px solid #DDD;
+    border-bottom: none;
+    padding: 6px 10px;
+    width: 125px;
+    background: #FFF;
+    z-index: 1;
+    margin: -26px 2px 0 0px;
+    text-align: center;
+    color: #000;
+}
+
+.EMIbillingtabred
+{
+    float: right;
+    border-width: 1px 1px medium;
+    border: 1px solid #DDD;
+    border-bottom: none;
+    padding: 6px 10px;
+    width: 125px;
+    background: #ED1C24;
+    z-index: 1;
+    margin: -26px 2px 0 0px;
+    text-align: center;
+    color: #FFF;
+}
+
+.EMISelectedrow
+{
+    color: #000;
+}
+
+.hypertextlink
+{
+    font: normal 11px Arial;
+    text-decoration: underline;
+    color: Blue;
+    cursor: pointer;
+}
+
+.msgstrip
+{
+    display: block;
+    margin: 15px 0px;
+    background: #EEE;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 578px;
+    padding: 6px 10px 10px 5px;
+}
+.Infomsg
+{
+    background: url('Images/Info.jpg') no-repeat;
+    display: inline-block;
+    padding: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.Warningmsg
+{
+    background: url('Images/warning1.png') no-repeat;
+    display: inline-block;
+    padding: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.Failmsg
+{
+    background: url('Images/Sorry.jpg') no-repeat;
+    display: inline-block;
+    padding: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.Successmsg
+{
+    background: url('Images/Successgreen.jpg') no-repeat;
+    display: inline-block;
+    padding: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.msgstripGreen
+{
+    display: block;
+    margin: 15px 0px;
+    background: #EEE;
+    vertical-align: middle;
+    font-weight: bold;
+    width: 578px;
+    padding: 6px 10px 10px 5px;
+}
+
+
+.PaymentHeading
+{
+    font-weight: bold;
+    margin: 0 auto 0;
+    vertical-align: middle;
+    font-size: 16px;
+    width: 890px;
+    height: 10px;
+}
+
+.imgCreditCardNumber
+{
+    height: 28px;
+    width: 47px;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px;
+}
+.imgCreditCardNumbererror
+{
+    height: 28px;
+    width: 47px;
+    border: 1px solid red !important;
+    border-radius: 0 3px 3px 0;
+    margin-left: -1px;
+}
+
+.secure_checkout
+{
+    background: url("Images/SecureCheck.jpg") no-repeat scroll transparent;
+    display: inline-block;
+    height: 32px;
+    width: 27px;
+}
+.RetryPopupMaindiv
+{
+    width: 389px;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 5px;
+    position: relative;
+    background: #FFF;
+}
+.Redbg
+{
+    background: #f71821;
+    background: -webkit-gradient(linear, 0 0, 100% 100%, from(#f71821), to(#fa767c));
+    background: -webkit-linear-gradient(top, #f71821 60%, #fa767c);
+    background: -moz-linear-gradient(top, #f71821 60%, #fa767c);
+    background: -o-linear-gradient(top, #f71821 60%, #fa767c);
+    background: -ms-linear-gradient(top, #f71821 60%, #fa767c);
+    background: linear-gradient(top, #f71821 60%, #fa767c);
+    height: 28px;
+    width: 385px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 1px 2px #888888;
+    padding: 4px 0 0 4px;
+}
+.Closediv
+{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+.contentmaindiv
+{
+    font: normal 14px/22px Arial;
+    color: #444;
+}
+.footer_quality100Image
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -225px -144px no-repeat;
+    width: 44px;
+    height: 21px;
+    margin: 0 0 3px 0;
+}
+.footer_quality100
+{
+    font: normal 10px Arial;
+    color: #747474;
+    width: 120px;
+    margin: 0 35px 0 0;
+    float: left;
+}
+
+.footer_30dayreturnImage
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -280px -146px no-repeat;
+    width: 24px;
+    height: 23px;
+    margin: 0 0 3px 0;
+}
+.footer_30dayreturn
+{
+    font: normal 10px Arial;
+    color: #747474;
+    width: 120px;
+    margin: 0 35px 0 0;
+    float: left;
+}
+
+.footer_free_shippingImage
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -184px -144px no-repeat;
+    width: 30px;
+    height: 19px;
+    margin: 0 0 3px 0;
+}
+.footer_free_shipping
+{
+    font: normal 10px Arial;
+    color: #747474;
+    width: 120px;
+    margin: 0 0 0 0;
+    float: left;
+}
+
+.footer-mastercard
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -9px -3px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-mastercard:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -9px -38px no-repeat;
+}
+
+.footer-americanexp
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -71px -3px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-americanexp:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -71px -38px no-repeat;
+}
+
+.footer-visa
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -132px -3px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-visa:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -132px -38px no-repeat;
+}
+
+.footer-emi
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -193px -3px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-emi:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -193px -38px no-repeat;
+}
+
+.footer-netbank
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -254px -3px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-netbank:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -254px -38px no-repeat;
+}
+
+.footer-cod
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -314px -3px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-cod:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -314px -38px no-repeat;
+}
+
+.footer-aramex
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -9px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-aramex:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -9px -106px no-repeat;
+}
+
+.footer-dtdc
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -71px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-dtdc:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -71px -106px no-repeat;
+}
+
+.footer-dtdcpriority
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -132px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-dtdcpriority:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -132px -106px no-repeat;
+}
+
+.footer-firstflight
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -193px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-firstflight:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -193px -106px no-repeat;
+}
+
+.footer-fedex
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -254px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-fedex:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -254px -106px no-repeat;
+}
+
+.footer-bluedart
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -314px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-bluedart:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -314px -106px no-repeat;
+}
+
+.footer-ems
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -375px -72px no-repeat;
+    width: 53px;
+    height: 28px;
+    margin: 0 8px 0 0;
+    display: inline-block;
+}
+.footer-ems:hover
+{
+    background: url(http://www.shop.irctc.co.in/template/shopirctccoin/img/sprite_footer.png) -375px -106px no-repeat;
+}

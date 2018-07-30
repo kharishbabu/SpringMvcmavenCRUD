@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+.leave-table{
+font-size: 12px;
+
+}
+.button{
+border-radius:5px;
+background-color: #017DF8;
+color: white;
+width: 110px;
+height: 30px;
+font-weight: bold;
+font-size: 14px;
+}
+.st-table{
+border:1px solid ;
+border-collapse:collapse;
+
+font-size: 12px;
+}
+.st-table th{
+	background-color: teal;
+	color: white;
+	border-style: inherit;
+	
+	}
+.st-table td{
+	border:1px solid black;
+	
+width: 300px;
+height: 30px;
+font-weight: bold;
+text-align: center;
+}
+.paysliptable
+{
+font-size: 12px;
+}
+.paysliptable2
+{
+font-size: 12px;
+}
+.dayststus
+	{
+	font-size: 12px;
+	}
+.statusreport
+	{
+	border:1px solid ;
+	border-collapse:collapse;
+	font-size: 12px;
+	}
+.statusreport td{
+	border:1px solid black;
+	
+width: 150px;
+height: 80px;
+font-weight: bold;
+text-align: center;
+}
+.statusreport th{
+	border:1px solid black;
+	font-weight: bold;
+}
+.gen{
+width: 100%;
+}
+.windowtr{
+
+
+}
+.windowtd
+{
+	height;20px;
+	width:300px;
+	background-image: url("headerBgT.gif");
+}
+.windowtable
+{
+
+}
+.label
+{
+font-size: 12px;
+font-weight: bold;
+}
+.windowtdsize
+{
+height: 200px;
+}

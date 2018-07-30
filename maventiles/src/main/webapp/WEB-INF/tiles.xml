@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC
+     "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
+<tiles-definitions>
+ <definition name="definition" template="/WEB-INF/jsp/layout.jsp">
+  <put-attribute name="title" value="Maven Tiles" /> 
+  <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" /> 
+  <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" /> 
+  <put-attribute name="body" value="/WEB-INF/jsp/body.jsp" /> 
+  <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" /> 
+  </definition>
+ <definition name="go" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/home.jsp" /> 
+  </definition>
+ <definition name="home" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/home.jsp" /> 
+  </definition>
+   <definition name="about" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/about.jsp" /> 
+  </definition>
+   <definition name="contact" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" /> 
+  </definition>
+  
+    <definition name="register" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/register.jsp" /> 
+  </definition>
+   <definition name="success" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/success.jsp" /> 
+  </definition>
+  <definition name="Login" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/Login.jsp" /> 
+  </definition>
+   <definition name="logsuccess" extends="definition">
+    <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/logsuccess.jsp" /> 
+  </definition>
+   <definition name="logfail" extends="definition">
+  
+  <put-attribute name="body" value="/WEB-INF/jsp/logfail.jsp" /> 
+  </definition>
+   <definition name="viewdetails" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/viewdetails.jsp" /> 
+  </definition>
+  <definition name="viewdetailsdisplay" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/viewdetailsdisplay.jsp" /> 
+  </definition>
+  <definition name="editdetails" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/editdetails.jsp" /> 
+  </definition>
+   <definition name="editsuccess" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/editsuccess.jsp" /> 
+  </definition>
+  <definition name="delsuccess" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/delsuccess.jsp" /> 
+  </definition>
+   <definition name="changepassword" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/changepassword.jsp" /> 
+  </definition>
+   <definition name="changesuccess" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/changesuccess.jsp" /> 
+  </definition>
+     <definition name="home1" extends="definition">
+     <put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp" />
+  <put-attribute name="body" value="/WEB-INF/jsp/home1.jsp" /> 
+  </definition>
+</tiles-definitions>
